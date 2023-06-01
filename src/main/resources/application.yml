@@ -1,0 +1,17 @@
+server:
+  port: 9191
+spring:
+  application:
+    name: exception-handling-demo
+  sql:
+    init:
+      mode: always
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  datasource:
+    url: jdbc:h2:mem:demo
+    username: user
+    password: password
+    driver-class-name: org.h2.Driver
