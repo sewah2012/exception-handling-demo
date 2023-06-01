@@ -28,7 +28,7 @@ public class TransferController {
     }
 
     @GetMapping("/{id}")
-    ResponseEntity<?> creditAccount(@PathVariable("id") UUID accountId) throws Exception {
+    ResponseEntity<?> getAccountBalance(@PathVariable("id") UUID accountId) throws Exception {
         return ResponseEntity.status(HttpStatus.OK).body(transferService.getAccountBalance(accountId));
     }
 
